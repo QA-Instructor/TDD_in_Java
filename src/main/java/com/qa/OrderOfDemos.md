@@ -1,7 +1,7 @@
   Set up Maven Quickstart project 
   
   Add Junit5 Jupiter dependency
-  `java
+  ```java
       <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
       <dependency>
         <groupId>org.junit.jupiter</groupId>
@@ -9,7 +9,7 @@
         <version>5.8.1</version>
         <scope>test</scope>
       </dependency>
-  `
+  ```
   Remove Junit 4 dependency
   Update Maven
   
