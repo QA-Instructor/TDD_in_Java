@@ -57,17 +57,16 @@ public class BankAccountTest {
 //        Asserts that actual is not null.
     }
 
-//    @Ignore
-//    @Test
-//    @Disabled
-//    @DisplayName("Holder name is not set - show custom message")
-//    public void testHolderNameNotSet(){
-//        BankAccount bankAccount = new BankAccount(500, -1000);
-////        assertNotNull(bankAccount.getHolderName());
-////        overloads allows a custom message when a test FAILS
-//        assertNotNull(bankAccount.getHolderName(), "Account holder name is null");
-////        Asserts that actual is not null.
-//    }
+    @Test
+    @Disabled
+    @DisplayName("Holder name is not set - show custom message")
+    public void testHolderNameNotSet(){
+        BankAccount bankAccount = new BankAccount(500, -1000);
+//        assertNotNull(bankAccount.getHolderName());
+//        overloads allows a custom message when a test FAILS
+        assertNotNull(bankAccount.getHolderName(), "Account holder name is null");
+//        Asserts that actual is not null.
+    }
 
     @Test
     @DisplayName("Withdraw can't go below minimum balance")
