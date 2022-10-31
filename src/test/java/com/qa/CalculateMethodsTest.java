@@ -13,11 +13,11 @@ public class CalculateMethodsTest {
         assertEquals(10, calculateMethods.divide(100,10));
     }
 
-    @Test
-    @Disabled
-    public void testDivideFails(){
-        assertEquals(11, calculateMethods.divide(100,10));
-    }
+//    @Test
+//    @Disabled
+//    public void testDivideFails(){
+//        assertEquals(11, calculateMethods.divide(100,10));
+//    }
 
     @Test
     public void testDivideByZero(){

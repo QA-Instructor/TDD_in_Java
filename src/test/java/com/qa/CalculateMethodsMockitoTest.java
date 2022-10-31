@@ -39,8 +39,8 @@ public class CalculateMethodsMockitoTest {
         Mockito.when(calculateMethods.divide(6,3)).thenReturn(2);
     }
 
-    @Test
-    public void testDivide(){
-        assertEquals(2, calculateMethods.divide(6,3));
-    }
+//    @Test
+//    public void testDivide(){
+//        assertEquals(2, calculateMethods.divide(6,3));
+//    }
 }

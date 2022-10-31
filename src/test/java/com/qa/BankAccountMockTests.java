@@ -22,8 +22,8 @@ public class BankAccountMockTests {
         Mockito.when(bankAccount.getInterestRate()).thenReturn(1.2);
     }
 
-    @Test
-    public void testInterestRateRetrieval(){
-        assertEquals(1.2, bankAccount.getInterestRate());
-    }
+//    @Test
+//    public void testInterestRateRetrieval(){
+//        assertEquals(1.2, bankAccount.getInterestRate());
+//    }
 }
