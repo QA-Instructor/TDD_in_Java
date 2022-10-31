@@ -26,13 +26,6 @@ public class BankAccountOrderedExecutionTest {
 //        assertEquals(500, bankAccount.getBalance());
 //
 //    }
-    @Test
-    @Order(2)
-    @DisplayName("Withdraw runs successfully when ordered")
-    public void testWithdraw(){
-        bankAccount.withdraw(300);
-        assertEquals(200, bankAccount.getBalance());
-    }
 
     @Test
     @Order(1)
@@ -42,4 +35,13 @@ public class BankAccountOrderedExecutionTest {
         assertEquals(500, bankAccount.getBalance());
 
     }
+    @Test
+    @Order(2)
+    @DisplayName("Withdraw runs successfully when ordered")
+    public void testWithdraw(){
+        bankAccount.withdraw(300);
+        assertEquals(200, bankAccount.getBalance());
+    }
+
+
 }
