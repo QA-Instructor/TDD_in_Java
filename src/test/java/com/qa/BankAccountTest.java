@@ -1,6 +1,7 @@
 package com.qa;
 
 //import jdk.nashorn.internal.ir.annotations.Ignore;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -58,6 +59,7 @@ public class BankAccountTest {
 
 //    @Ignore
     @Test
+    @Disabled
     @DisplayName("Holder name is not set - show custom message")
     public void testHolderNameNotSet(){
         BankAccount bankAccount = new BankAccount(500, -1000);
