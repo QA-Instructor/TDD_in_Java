@@ -1,5 +1,6 @@
 package com.qa;
 
+//import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -55,6 +56,7 @@ public class BankAccountTest {
 //        Asserts that actual is not null.
     }
 
+//    @Ignore
     @Test
     @DisplayName("Holder name is not set - show custom message")
     public void testHolderNameNotSet(){
@@ -83,6 +85,7 @@ public class BankAccountTest {
 //        this would fail:
 //                assertAll(() -> bankAccount.deposit(200), () -> bankAccount.withdraw(1700));
     }
+
 
     @Test
     @DisplayName("Timeout of deposit method")

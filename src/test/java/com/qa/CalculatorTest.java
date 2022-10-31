@@ -36,7 +36,7 @@ class CalculatorTest {
     }
 
     @Test
-    public void add_PositiveNumbers_1_and_3_GivesPositiveNumber_3(){
+    public void add_PositiveNumbers_1_and_2_GivesPositiveNumber_3(){
 //        Triple 'A' pattern
 //        Arrange
         double num1 = 1.0;
@@ -94,7 +94,7 @@ class CalculatorTest {
 
 
     @Test
-    public void divide_PositiveDoubles_10_and_0_ThrowsException(){
+    public void divide_PositiveDoubles_10_and_0_GivesInfinity(){
         //        Arrange
         double num1 = 10;
         double num2 = 0;
