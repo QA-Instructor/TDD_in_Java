@@ -1,6 +1,8 @@
 package com.qa;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class CalculateMethodsTest {
@@ -12,6 +14,7 @@ public class CalculateMethodsTest {
     }
 
     @Test
+    @Disabled
     public void testDivideFails(){
         assertEquals(11, calculateMethods.divide(100,10));
     }

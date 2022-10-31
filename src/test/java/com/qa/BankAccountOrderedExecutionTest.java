@@ -12,22 +12,7 @@ public class BankAccountOrderedExecutionTest {
 //    Note the withdraw test fails when run without explicit ordering
 //    Tests can run Alphanumerically, by OrderAnnotation, Randomly each time, or with a Custom Order
 
-    @Test
-    @DisplayName("Withdraw runs successfully when ordered")
-    public void testWithdraw(){
-        bankAccount.withdraw(300);
-        assertEquals(200, bankAccount.getBalance());
-    }
-
-    @Test
-    @DisplayName("Deposit runs successfully when ordered")
-    public void testDeposit(){
-        bankAccount.deposit(500);
-        assertEquals(500, bankAccount.getBalance());
-
-    }
 //    @Test
-//    @Order(2)
 //    @DisplayName("Withdraw runs successfully when ordered")
 //    public void testWithdraw(){
 //        bankAccount.withdraw(300);
@@ -35,11 +20,26 @@ public class BankAccountOrderedExecutionTest {
 //    }
 //
 //    @Test
-//    @Order(1)
 //    @DisplayName("Deposit runs successfully when ordered")
 //    public void testDeposit(){
 //        bankAccount.deposit(500);
 //        assertEquals(500, bankAccount.getBalance());
 //
 //    }
+    @Test
+    @Order(2)
+    @DisplayName("Withdraw runs successfully when ordered")
+    public void testWithdraw(){
+        bankAccount.withdraw(300);
+        assertEquals(200, bankAccount.getBalance());
+    }
+
+    @Test
+    @Order(1)
+    @DisplayName("Deposit runs successfully when ordered")
+    public void testDeposit(){
+        bankAccount.deposit(500);
+        assertEquals(500, bankAccount.getBalance());
+
+    }
 }
